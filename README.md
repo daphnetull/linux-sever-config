@@ -9,7 +9,7 @@ Below are the steps taken to complete this project:
 1. Logged into lightsail instance with ssh
 2. As root, executed the commands`sudo apt-get update` to update the package list, and then `sudo apt-get upgrade` to upgrade the packages themselves.
 
-Sources:
+### Sources:
 * https://medium.com/@GalarnykMichael/aws-ec2-part-2-ssh-into-ec2-instance-c7879d47b6b
 * https://classroom.udacity.com/nanodegrees/nd004/parts/b2de4bd4-ef07-45b1-9f49-0e51e8f1336e/modules/56cf3482-b006-455c-8acd-26b37b6458d2/lessons/4331066009/concepts/48010894520923
 
@@ -104,17 +104,20 @@ Sources:
 3. `sudo a2enmod wsgi` to enable the module
 4. `sudo service apache2 restart` to restart Apache
 5. Created `catalog.wsgi` with `sudo nano catalog.wsgi`
-`import sys
+```
+import sys
 import logging
 
 logging.basicConfig(stream=sys.stderr)
 sys.path.insert(0, '/var/www/')
 
 from catalog import app as application
-application.secret_key = 'super_secret_key'`
+application.secret_key = 'super_secret_key'
+```
 6. Navigated to `/etc/apache2/sites-available`
 7. Created Apache configuration file with `sudo nano catalog.conf`
-`<VirtualHost *:80>
+```
+<VirtualHost *:80>
       ServerName 54.159.128.204.xip.io
       ServerAdmin daphne@daphneedle.com
       WSGIScriptAlias / /var/www/catalog/catalog.wsgi
@@ -125,7 +128,8 @@ application.secret_key = 'super_secret_key'`
       ErrorLog ${APACHE_LOG_DIR}/error.log
       LogLevel warn
       CustomLog ${APACHE_LOG_DIR}/access.log combined
-  </VirtualHost>`
+  </VirtualHost>
+```
 8. Disabled default Apache site with `sudo a2dissite 000-default`
 9. Enabled catalog app site with `sudo a2ensite catalog`
 10. Reloaded and restarted Apache with `sudo service apache2 reload` and ` sudo service apache2 restart`
