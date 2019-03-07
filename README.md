@@ -1,6 +1,6 @@
 This is the final project of [Udacity's Fullstack Nanodegree Course](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004).
 
-Successful completion of this project demonstrates the ability to deploy the Item Catalog project onto an Ubuntu Linux web server instance using [AWS Lightsail](https://aws.amazon.com/lightsail/) with public key encryption.  Tools used include the [Apache HTTP Server](http://httpd.apache.org/) to respond to HTTP requests and serve a webpage, [Flask](http://flask.pocoo.org/) to serve the database contents to the web app, [SQLAlchemy](https://www.sqlalchemy.org/) as an Object-Relational Mapping tool that converts data from the database schema to Python objects, and [PostgreSQL](https://www.postgresql.org/) to serve as the database schema.
+Successful completion of this project demonstrates the ability to deploy the Item Catalog project onto an Ubuntu Linux web server instance using [AWS Lightsail](https://aws.amazon.com/lightsail/) with public key encryption.  Tools used include the [Apache HTTP Server](http://httpd.apache.org/) to respond to HTTP requests and serve a webpage, [Flask](http://flask.pocoo.org/) to serve the database contents to the web app, [SQLAlchemy](https://www.sqlalchemy.org/) as an Object-Relational Mapping tool to convert database contents into Python objects, and [PostgreSQL](https://www.postgresql.org/) to serve as the database schema itself.
 
 Below are the steps taken to complete this project:
 
