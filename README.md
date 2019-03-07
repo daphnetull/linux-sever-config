@@ -2,7 +2,7 @@ This is the final project of [Udacity's Fullstack Nanodegree Course](https://www
 
 Successful completion of this project demonstrates the ability to deploy the Item Catalog project onto an Ubuntu Linux web server instance using [AWS Lightsail](https://aws.amazon.com/lightsail/) with public key encryption.  Tools used include the [Apache HTTP Server](http://httpd.apache.org/) to respond to HTTP requests and serve a webpage, [Flask](http://flask.pocoo.org/) to serve the database contents to the web app, [SQLAlchemy](https://www.sqlalchemy.org/) as an Object-Relational Mapping tool to convert database contents into Python objects, and [PostgreSQL](https://www.postgresql.org/) to serve as the database schema itself.
 
-The IP address of the project is: http://54.159.128.204 with http://54.159.128.204.xip.io/ to be used as a full address if necessary.
+The IP address of the project is: http://54.159.128.204 with `port 2200` with http://54.159.128.204.xip.io/ to be used as a full address if necessary.
 
 Below are the steps taken to complete this project:
 
